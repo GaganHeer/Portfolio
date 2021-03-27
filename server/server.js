@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose')
@@ -10,6 +11,14 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+
+    app.get('*', function(req, res) {
+        res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    });
+}
 
 mongoose.connect(process.env.DB, {useNewUrlParser: true, useUnifiedTopology: true});
 const connection = mongoose.connection;
