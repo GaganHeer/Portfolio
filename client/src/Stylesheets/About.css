@@ -28,7 +28,7 @@
     text-align: left;
     position: relative;
     padding: 30px;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 .skillCol{
@@ -36,7 +36,7 @@
     text-align: left;
     position: relative;
     padding: 30px;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 .skillHeader{
@@ -94,7 +94,7 @@
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Roboto';
-    font-size: x-large;
+    font-size: 20px;
     background-color: #50AB5C;
     transition-duration: 0.4s;
 }

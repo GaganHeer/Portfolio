@@ -80,9 +80,9 @@ const About = () => {
                 </ul>
 
                 <ul>
-                  <li>Object Oriented Programming</li>
-                  <li>Agile Development Methodology</li>
+                  <li>Object Oriented Design</li>
                   <li>Entity Component System</li>
+                  <li>Agile Development</li>
                   <li>Machine Learning</li>
                   <li>Cloud Computing</li>
                   <li>API Integration</li>                      
