@@ -12,14 +12,6 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-
-    app.get('*', function(req, res) {
-        res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-    });
-}
-
 mongoose.connect(process.env.DB, {useNewUrlParser: true, useUnifiedTopology: true});
 const connection = mongoose.connection;
 connection.once('open', () => {
@@ -30,12 +22,20 @@ connection.once('open', () => {
     res.send('Intro page opened');
 });*/
 
-app.use('/projects', projectRouter);
+app.get('/projects', projectRouter);
 
 /*app.get('/about', (req, res) => {
     res.send('About page opened');
 });*/
 
-app.use('/contact', contactRouter);
+app.post('/contact', contactRouter);
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+
+    app.get('*', function(req, res) {
+        res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    });
+}
 
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
