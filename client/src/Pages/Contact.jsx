@@ -81,7 +81,7 @@ const Contact = () => {
       message: message.value,
     };
 
-    let response = await fetch('http://www.gaganheer.com:2929/contact', {
+    let response = await fetch('/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
