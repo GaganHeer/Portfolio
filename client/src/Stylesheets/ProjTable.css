@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto|Aleo|Cutive+Mono);
+
+.proj{
+    padding-top: 100px;
+    color: black;
+}
+
+.imgContainer{
+    width: 60%;
+}
+
+.titleCell{
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-family: 'Aleo';
+}
+
+.textCell{
+    vertical-align: top;
+    font-family: 'Roboto';
+}
+
+.techRow{
+    font-family: 'Cutive Mono';
+    letter-spacing: -0.12em;
+    height: 20px;
+}
+
+.techCell{
+    display: inline;
+    vertical-align: bottom;
+}
+
+.linkRow{
+    height: 10px;
+}
+
+table {
+    background-color: #828E99;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}

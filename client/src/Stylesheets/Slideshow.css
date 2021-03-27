@@ -1,0 +1,49 @@
+.slideContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #736262;
+  z-index: 2;
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #736262;
+  z-index: 2;
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hidden {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.active {
+  opacity: 1;
+  transition-duration: 3s;
+}
+
+.projectImg {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.aboutImg {
+  width: 320px;
+  height: 700px;
+}

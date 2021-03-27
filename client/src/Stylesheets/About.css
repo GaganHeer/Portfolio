@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Raleway);
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-family: 'Roboto';
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.textCol{
+    flex: 1;
+    text-align: left;
+    position: relative;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.skillCol{
+    flex: 1;
+    text-align: left;
+    position: relative;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.skillHeader{
+    background: linear-gradient(130deg,
+    #828E99 0%, 
+    #828E99 56%, 
+    #29242D 57%, 
+    #29242D 100%);
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    font-family: 'Raleway';
+}
+
+.textHeader{
+    background: linear-gradient(130deg,
+    #828E99 0%, 
+    #828E99 46%, 
+    #29242D 47%, 
+    #29242D 100%);
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    font-family: 'Raleway';
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.slides{
+    margin: auto;
+    height: auto;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slideButtons{
+    width: 25%;
+    height: 50px;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: x-large;
+    background-color: #50AB5C;
+    transition-duration: 0.4s;
+}
+
+.slideButtons:hover {
+    background-color: #346f3b;
+}

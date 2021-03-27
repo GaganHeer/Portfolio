@@ -1,0 +1,37 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.projectsMain{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
+.projHeader{
+    background: linear-gradient(130deg,
+    #736262 0%, 
+    #736262 55%, 
+    #29242D 56%, 
+    #29242D 100%);
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    width: 55%;
+    font-size: x-large;
+}
+
+.projInfo{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    font-size: x-large;
+}

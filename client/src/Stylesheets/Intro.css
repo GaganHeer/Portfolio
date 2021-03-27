@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia|Raleway|Noto+Sans+TC);
+
+.introContainer{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.colContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCol{
+  flex: 1;
+  text-align: center;
+  position: relative;
+  left: 10%;
+}
+
+.rightCol{
+  flex: 1;
+  text-align: center;
+  position: relative;
+  right: 10%;
+}
+
+.textBreakName{
+  width: 20%;
+  height: auto;
+  margin: auto;
+}
+
+.textBreakTitle{
+  width: 30%;
+  height: auto;
+  margin: auto;
+}
+
+.taglineContainer{
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.taglineText{
+  font-family: "Raleway";
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.ideasText{
+  font-style: italic;
+  background-color: #50AB5C;
+  font-family: "Sofia";
+}
+
+.realityText{
+  font-weight: bold;
+  color: #50AB5C;
+  font-family: "Noto Sans TC";
+}
