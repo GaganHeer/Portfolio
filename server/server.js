@@ -38,4 +38,4 @@ app.get('/about', (req, res) => {
 
 app.post('/contact', contactRouter);
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Server is listening on port ${port}`));
